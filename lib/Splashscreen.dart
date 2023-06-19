@@ -11,8 +11,8 @@ class SplashScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp5geq9wskzybNixQYwU7XwTOUnqLzoTzSTbsRSIShe5L_8iDoyTijGhWLOPFkhNikBUw&usqp=CAU',
-                  height: 300,),
+              // Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp5geq9wskzybNixQYwU7XwTOUnqLzoTzSTbsRSIShe5L_8iDoyTijGhWLOPFkhNikBUw&usqp=CAU',
+              //     height: 300,),
               Container(
                 margin: EdgeInsets.only(top: 50),
                 child: Text('Buy Fresh Groceries',style: TextStyle(
