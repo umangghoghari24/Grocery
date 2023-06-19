@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery/CategoriesWidget.dart';
+import 'package:grocery/ItemsWidget.dart';
+import 'package:grocery/PopularItemWidget.dart';
 // import 'package:badges/badges.dart';
 
 class Homepage extends StatelessWidget {
@@ -118,6 +120,8 @@ class Homepage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         CategoriesWidget(),
+                         PopularItemWidget(),
+                        ItemsWidget(),
                       ],
                     ),
                   )
