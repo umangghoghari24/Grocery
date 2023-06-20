@@ -43,7 +43,7 @@ class PopularItemWidget extends StatelessWidget {
                     )
                   ]
                 ),
-                child: Image.asset('assetimage/4oranges.jpg'),
+                child: Image.asset('assetimage/$i.jpg'),
               )
             ],
           ),

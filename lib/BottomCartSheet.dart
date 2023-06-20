@@ -32,7 +32,7 @@ class BottomCartsheet extends StatelessWidget {
                       child: Row(
                         children: [
                           Padding(padding: EdgeInsets.all(10),
-                          child: Image.asset('assetimage/1cake.jpg',
+                          child: Image.asset('assetimage/$i.jpg',
                             width: 80,height: 80,),
                           ),
                           Column(

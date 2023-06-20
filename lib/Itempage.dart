@@ -18,7 +18,7 @@ class Itempage extends StatelessWidget {
                   alignment: Alignment.topLeft,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assetimage/4oranges.jpg'))
+                        image: AssetImage('assetimage/1.jpg'))
                   ),
                   child: InkWell(
                     onTap: () {

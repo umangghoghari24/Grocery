@@ -54,7 +54,7 @@ class ItemsWidget extends StatelessWidget {
                   },
                   child: Container(
                     margin: EdgeInsets.all(10),
-                    child: Image.asset('assetimage/3mirchi.jpg',
+                    child: Image.asset('assetimage/$i.jpg',
                     height: 110,width: 110,),
                   ),
                 ),

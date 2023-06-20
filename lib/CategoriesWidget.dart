@@ -49,7 +49,7 @@ class CategoriesWidget extends StatelessWidget {
                 child: Row(
                   children: [
                     Padding(padding: EdgeInsets.all(5),
-                    child: Image.asset("assetimage/aalu.jpg",
+                    child: Image.asset("assetimage/$i.jpg",
                     height: 50,width: 50,)
                     ),
                     Padding(padding: EdgeInsets.only(right: 5),
