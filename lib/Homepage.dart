@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:grocery/CategoriesWidget.dart';
 import 'package:grocery/ItemsWidget.dart';
 import 'package:grocery/PopularItemWidget.dart';
+import 'package:sliding_sheet/sliding_sheet.dart';
 // import 'package:badges/badges.dart';
 
 class Homepage extends StatelessWidget {
@@ -44,7 +45,17 @@ class Homepage extends StatelessWidget {
                               fontSize: 20
                             ),),
                             child: InkWell(
-                              onTap: () {},
+                              onTap: () {
+                                showSlidingBottomSheet(context, builder: (context){
+                                  return SlidingSheetDialog(
+                                    elevation: 8,
+                                    cornerRadius: 16,
+                                    builder: (context ,state) {
+                                      return ButtomCartSheet();
+                                    }
+                                  );
+                                },);
+                              },
                               child: Icon(Icons.shopping_cart,
                                 color: Colors.white,
                                   size: 30,),
