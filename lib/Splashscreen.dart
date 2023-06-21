@@ -24,7 +24,9 @@ class SplashScreen extends StatelessWidget {
               SizedBox(height: 50,),
               InkWell(
                 onTap: () {
+
                   // pushreplacednamed  so it can not goes back to splashscreen
+
                   Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Homepage()));
                 },
                 child: Ink(
