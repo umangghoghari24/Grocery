@@ -1,3 +1,4 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery/BottomCartSheet.dart';
@@ -145,6 +146,18 @@ class Homepage extends StatelessWidget {
                 ],
               )
           ),
+      ),
+      bottomNavigationBar: CurvedNavigationBar(
+        backgroundColor: Colors.transparent,
+        onTap: (index) {},
+        height: 70,
+        color: Colors.red,
+        items: [
+          Icon(Icons.home,size: 30,color: Colors.white,),
+          Icon(Icons.shopping_cart,size: 30,color: Colors.white,),
+          Icon(Icons.menu,size: 30,color: Colors.white,)
+
+        ],
       ),
     );
   }
