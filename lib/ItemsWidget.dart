@@ -78,7 +78,7 @@ class ItemsWidget extends StatelessWidget {
                     ),),
                   ),
                 ),
-                Padding(padding: EdgeInsets.symmetric(vertical: 5),
+                Padding(padding: EdgeInsets.symmetric(vertical: 3),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -97,7 +97,7 @@ class ItemsWidget extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10)
                         ),
                         child: Icon(Icons.add_shopping_cart,
-                          size: 15,
+                          size: 14,
                         color: Colors.white,),
                       ),
                     )
