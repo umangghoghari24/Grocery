@@ -11,7 +11,7 @@ class Itempage extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                for (int i=1; 1<8; i++)
+               // for (int i=1; 1<8; i++)
                 Container(
                   margin: EdgeInsets.all(15),
                   height: 350,
@@ -19,7 +19,7 @@ class Itempage extends StatelessWidget {
                   alignment: Alignment.topLeft,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assetimage/$i.jpg'))
+                        image: AssetImage('assetimage/1.jpg'))
                   ),
                   child: InkWell(
                     onTap: () {
