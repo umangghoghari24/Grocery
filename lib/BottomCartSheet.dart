@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 class BottomCartsheet extends StatelessWidget {
   const BottomCartsheet({Key? key}) : super(key: key);
 
+
   @override
   Widget build(BuildContext context) {
+    bool checkedvalue = false;
+
     return Material(
       child: Container(
         padding: EdgeInsets.only(top: 20),
@@ -190,7 +193,9 @@ class BottomCartsheet extends StatelessWidget {
                     fontSize: 25
                   ),),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                       Navigator.pushNamed(context, 'orderpage');
+                    },
                     child: Container(
                       padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
                       decoration: BoxDecoration(

@@ -149,12 +149,14 @@ class Homepage extends StatelessWidget {
       ),
       bottomNavigationBar: CurvedNavigationBar(
         backgroundColor: Colors.transparent,
-        onTap: (index) {},
+        //onTap: (index) {},
         height: 70,
         color: Colors.red,
         items: [
           Icon(Icons.home,size: 30,color: Colors.white,),
           Icon(Icons.shopping_cart,size: 30,color: Colors.white,),
+          // IconButton(onPressed: () {},
+          //     icon: Icon(Icons.shopping_cart,size: 30,color: Colors.white),),
           Icon(Icons.menu,size: 30,color: Colors.white,)
 
         ],
