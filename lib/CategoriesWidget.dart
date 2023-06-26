@@ -4,7 +4,8 @@ class CategoriesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return
+      Column(
       children: [
         Padding(padding: EdgeInsets.only(left: 10,right: 10,bottom: 10),
         child: Row(
@@ -64,7 +65,6 @@ class CategoriesWidget extends StatelessWidget {
             ],
           ),
         ),
-
       ],
     );
   }

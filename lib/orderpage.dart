@@ -22,7 +22,7 @@ class orderpage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                margin: EdgeInsets.only(left: 15,top: 20),
+                margin: EdgeInsets.only(left: 15,top: 10),
                 alignment: Alignment.centerLeft,
                 child: Text('Fill Order Detail`s',style: TextStyle(
                   fontSize: 25,
@@ -169,7 +169,24 @@ class orderpage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 50,),
+              SizedBox(height: 30,),
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 20),
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text('Order Now',style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18
+                  ),),
+                ),
+              )
             ],
           )
         ],
