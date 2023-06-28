@@ -70,7 +70,7 @@ class BottomCartsheet extends StatelessWidget {
                               SizedBox(height: 25,),
                               Row(
                                 children: [
-                                  Container(
+                                  Container (
                                     padding: EdgeInsets.all(2),
                                     decoration: BoxDecoration(
                                       color: Colors.white,

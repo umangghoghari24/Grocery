@@ -11,17 +11,18 @@ class SplashScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              SizedBox(height: 50,),
               Image.network('https://cdnb.artstation.com/p/assets/images/images/026/567/563/original/macarena-santillan-marquina-mami-animacion-wip10.gif?1589132920',
                   height: 300,),
               Container(
-                margin: EdgeInsets.only(top: 50),
+                margin: EdgeInsets.only(top: 80),
                 child: Text('Buy Fresh Groceries',style: TextStyle(
                   color: Colors.green,
                   fontSize: 30,
                   fontWeight: FontWeight.bold
                 ),),
               ),
-              SizedBox(height: 50,),
+              SizedBox(height: 40,),
               InkWell(
                 onTap: () {
 
