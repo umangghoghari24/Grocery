@@ -185,6 +185,7 @@ class orderpage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontSize: 18
                   ),),
+
                 ),
               )
             ],

@@ -47,7 +47,7 @@ class Homepage extends StatelessWidget {
                            padding: EdgeInsets.all(0),
                            label : Text('3',style: TextStyle(
                               color: Colors.white,
-                              fontSize: 20
+                              fontSize: 15
                             ),),
                             child: InkWell(
                               onTap: () {
@@ -65,7 +65,7 @@ class Homepage extends StatelessWidget {
                               },
                               child: Icon(Icons.shopping_cart,
                                 color: Colors.white,
-                                  size: 30,),
+                                  size: 28,),
                             ),
                           ),
                         )
