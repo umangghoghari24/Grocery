@@ -3,6 +3,7 @@ import 'package:grocery/Homepage.dart';
 import 'package:grocery/Itempage.dart';
 import 'package:grocery/Splashscreen.dart';
 import 'package:grocery/orderpage.dart';
+import 'package:grocery/suceces.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         'Homepage' : (context) => Homepage(),
         'itempage': (context) => Itempage(),
         'orderpage' : (context) => orderpage(),
+        'sucees' : (context) => sucees()
       },
     );
   }

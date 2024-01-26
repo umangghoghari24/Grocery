@@ -177,14 +177,19 @@ class orderpage extends StatelessWidget {
                   padding: EdgeInsets.symmetric(vertical: 15,horizontal: 20),
                   margin: EdgeInsets.symmetric(horizontal: 20),
                   decoration: BoxDecoration(
-                    color: Colors.green,
+                    // color: Colors.green,
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Text('Order Now',style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18
-                  ),),
+                  child: ElevatedButton(onPressed: () {
+                    Navigator.pushNamed(context, 'sucees');
+                  },
+                      child: Text('Order Now')),
+                  // Text('Order Now',style: TextStyle(
+                  //   color: Colors.white,
+                  //   fontWeight: FontWeight.bold,
+                  //   fontSize: 18,
+                  // ),),
+                  
 
                 ),
               )

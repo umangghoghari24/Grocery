@@ -6,14 +6,23 @@ import 'package:grocery/CategoriesWidget.dart';
 import 'package:grocery/ItemsWidget.dart';
 import 'package:grocery/PopularItemWidget.dart';
 import 'package:sliding_sheet/sliding_sheet.dart';
-
-
-
 // import 'package:badges/badges.dart';
 
-class Homepage extends StatelessWidget {
+class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
 
+  @override
+  State<Homepage> createState() => _HomepageState();
+}
+
+class _HomepageState extends State<Homepage> {
+
+  var tabclick = 0;
+  var click=[
+    Homepage(),
+    BottomCartsheet()
+    // person(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,7 +54,7 @@ class Homepage extends StatelessWidget {
                           child: Badge(
                             backgroundColor: Colors.red,
                            padding: EdgeInsets.all(0),
-                           label : Text('3',style: TextStyle(
+                           label : Text(' 3 ',style: TextStyle(
                               color: Colors.white,
                               fontSize: 15
                             ),),
@@ -72,9 +81,8 @@ class Homepage extends StatelessWidget {
                       ],
                     ),
                   ),
-
+                  // TabBarView(children: ),
                   // Wel come Text
-
                   Container(
                     alignment: Alignment.centerLeft,
                     padding: EdgeInsets.symmetric(horizontal: 15),
@@ -147,20 +155,54 @@ class Homepage extends StatelessWidget {
               )
           ),
       ),
+
       bottomNavigationBar: CurvedNavigationBar(
         backgroundColor: Colors.transparent,
-        //onTap: (index) {},
-        height: 70,
+        onTap: (index) {
+          setState(() {
+            tabclick=index;
+            print('Homepage');
+          });
+        },
+        height: 65,
         color: Colors.red,
         items: [
           Icon(Icons.home,size: 30,color: Colors.white,),
           Icon(Icons.shopping_cart,size: 30,color: Colors.white,),
-          // IconButton(onPressed: () {},
+          // IconButton(onPressed: () {
+          //   Navigator.push(context, MaterialPageRoute(builder: (context)=>BottomCartsheet()));
+          // },
           //     icon: Icon(Icons.shopping_cart,size: 30,color: Colors.white),),
-          Icon(Icons.menu,size: 30,color: Colors.white,)
-
+          Icon(Icons.person,size: 30,color: Colors.white,)
         ],
       ),
+
+      // BottomNavigationBar(
+      //   selectedItemColor: Colors.red,
+      //   currentIndex: tabclick,
+      //   onTap: (int index){
+      //     setState(() {
+      //       tabclick=index;
+      //     });
+      //   },
+      //   items:  [
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.chat),
+      //       label: 'Homepage',
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.adjust_rounded),
+      //       label: 'Cart',
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.video_call),
+      //       label: 'Video call',
+      //     )
+      //
+      //   ],
+      //
+      // ),
+
     );
   }
 }

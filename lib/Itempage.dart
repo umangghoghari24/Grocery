@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:grocery/BottomBar.dart';
-class Itempage extends StatelessWidget {
+class Itempage extends StatefulWidget {
   const Itempage({Key? key}) : super(key: key);
+
+  @override
+  State<Itempage> createState() => _ItempageState();
+}
+
+class _ItempageState extends State<Itempage> {
+  var count = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -59,28 +66,38 @@ class Itempage extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                              padding: EdgeInsets.all(3),
+                              padding: EdgeInsets.all(0),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                  borderRadius: BorderRadius.circular(20),
                               ),
-                              child: Icon(Icons.remove),
+                              child: IconButton(onPressed: () {
+                                setState(() {
+                                  count-=1;
+                                });
+                              },
+                                  icon: Icon(Icons.remove_outlined)),
                             ),
                             Container(
                               margin: EdgeInsets.symmetric(horizontal: 10),
-                              child: Text('01',style: TextStyle(
+                              child: Text('$count',style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 18,
                                 color: Colors.white
                               ),),
                             ),
                             Container(
-                              padding: EdgeInsets.all(3),
+                              padding: EdgeInsets.all(0),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(20),
                               ),
-                              child: Icon(Icons.add),
+                              child: IconButton(onPressed: () {
+                                setState(() {
+                                  count+=1;
+                                });
+                              },
+                                  icon: Icon(Icons.add)),
                             ),
                             // boxShadow: [
                             //   BoxShadow(
